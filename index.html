@@ -6,5 +6,100 @@
     <title></title>
     <link href="style.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <h1 id="title">Thanksgiving Survey</h1>
+    <p id="description">
+      Thank you for your time reviewing this thankful holiday
+    </p>
+    <form id="survey-form" action="https://www.pascal.com">
+      <fieldset>
+        <label for="name" id="name-label"
+          >Name <input type="text" required
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="email" id="email-label"
+          >Email <input type="text" required
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="age" id="age-label"
+          >Age (optional) <input type="number" min="10" max="99"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="often-celebrate"
+          >How often do you celebrate Thanksgiving?</label
+        >
+        <select name="often-celebrate" id="often-celebrate">
+          <option value="">(select one)</option>
+          <option value="1">Every year</option>
+          <option value="2">Once in a while</option>
+          <option value="3">Never</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Is Thanksgiving an underrated holiday?</legend>
+        <label for="yea"
+          ><input type="radio" id="yea" name="underrated" checked /> Yea</label
+        >
+        <label for="nah"
+          ><input type="radio" id="nah" name="underrated" /> Nah</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>
+          What is your favorite Thanksgiving food? (Check all that apply)
+        </legend>
+        <label for="turkey"
+          ><input type="checkbox" name="turkey" id="turkey" /> Turkey</label
+        >
+        <label for="ham"
+          ><input type="checkbox" name="ham" id="ham" /> Ham</label
+        >
+        <label for="stuffing"
+          ><input type="checkbox" name="stuffing" id="stuffing" />
+          Stuffing</label
+        >
+        <label for="mashed-taters"
+          ><input type="checkbox" name="mashed-taters" id="mashed-taters" />
+          Mashed Potatoes</label
+        >
+        <label for="gbean-casserole"
+          ><input
+            type="checkbox"
+            name="gbean-casserole"
+            id="gbean-casserole"
+          />Green Bean Casserole</label
+        >
+        <label for="brussel-sprouts"
+          ><input type="checkbox" name="brussel-sprouts" id="brussel-sprouts" />
+          Brussel Sprouts</label
+        >
+        <label for="cranberry-sauce"
+          ><input type="checkbox" name="cranberry-sauce" id="cranberry-sauce" />
+          Cranberry Sauce</label
+        >
+        <label for="apple-pie"
+          ><input type="checkbox" name="apple-pie" id="apple-pie" /> Apple
+          Pie</label
+        >
+        <label for="pumpkin-pie"
+          ><input type="checkbox" name="pumpkin-pie" id="pumpkin-pie" /> Pumpkin
+          Pie</label
+        >
+        <label for="other"
+          ><input type="checkbox" name="other" id="other" /> Other</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="other-food"
+          >If you selected other, list other favorite Thanksgiving food
+          (optional)
+          <textarea name="other-food" id="other-food"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
 </html>
