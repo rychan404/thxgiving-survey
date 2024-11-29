@@ -14,17 +14,18 @@
     <form id="survey-form" action="https://www.pascal.com">
       <fieldset>
         <label for="name" id="name-label"
-          >Name <input type="text" required
+          >Name <input type="text" id="name" name="name" required
         /></label>
       </fieldset>
       <fieldset>
         <label for="email" id="email-label"
-          >Email <input type="text" required
+          >Email <input type="text" id="email" name="email" required
         /></label>
       </fieldset>
       <fieldset>
         <label for="age" id="age-label"
-          >Age (optional) <input type="number" min="10" max="99"
+          >Age (optional)
+          <input type="number" id="age" name="age" min="10" max="99"
         /></label>
       </fieldset>
       <fieldset>
