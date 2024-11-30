@@ -14,22 +14,21 @@
     <form id="survey-form" action="https://www.pascal.com">
       <fieldset>
         <label for="name" id="name-label"
-          >Name
-          <input type="text" class="inputs" id="name" name="name" required
+          >Name <input class="block" type="text" id="name" name="name" required
         /></label>
       </fieldset>
       <fieldset>
         <label for="email" id="email-label"
           >Email
-          <input type="text" class="inputs" id="email" name="email" required
+          <input class="block" type="text" id="email" name="email" required
         /></label>
       </fieldset>
       <fieldset>
         <label for="age" id="age-label"
           >Age (optional)
           <input
+            class="block"
             type="number"
-            class="inputs"
             id="age"
             name="age"
             min="10"
@@ -40,7 +39,7 @@
         <label for="often-celebrate"
           >How often do you celebrate Thanksgiving?</label
         >
-        <select class="inputs" name="often-celebrate" id="often-celebrate">
+        <select class="block" name="often-celebrate" id="often-celebrate">
           <option value="">(select one)</option>
           <option value="1">Every year</option>
           <option value="2">Once in a while</option>
@@ -50,59 +49,105 @@
       <fieldset>
         <legend>Is Thanksgiving an underrated holiday?</legend>
         <label for="yea"
-          ><input type="radio" id="yea" name="underrated" checked /> Yea</label
+          ><input
+            type="radio"
+            class="inline"
+            id="yea"
+            name="underrated"
+            checked
+          />
+          Yea</label
         >
         <label for="nah"
-          ><input type="radio" id="nah" name="underrated" /> Nah</label
+          ><input type="radio" class="inline" id="nah" name="underrated" />
+          Nah</label
         >
       </fieldset>
       <fieldset>
         <legend>
           What is your favorite Thanksgiving food? (Check all that apply)
         </legend>
-        <label class="inputs" for="turkey"
-          ><input type="checkbox" name="turkey" id="turkey" /> Turkey</label
+        <label class="block" for="turkey"
+          ><input class="inline" type="checkbox" name="turkey" id="turkey" />
+          Turkey</label
         >
-        <label class="inputs" for="ham"
-          ><input type="checkbox" name="ham" id="ham" /> Ham</label
+        <label class="block" for="ham"
+          ><input class="inline" type="checkbox" name="ham" id="ham" />
+          Ham</label
         >
-        <label class="inputs" for="stuffing"
-          ><input type="checkbox" name="stuffing" id="stuffing" />
+        <label class="block" for="stuffing"
+          ><input
+            class="inline"
+            type="checkbox"
+            name="stuffing"
+            id="stuffing"
+          />
           Stuffing</label
         >
-        <label class="inputs" for="mashed-taters"
-          ><input type="checkbox" name="mashed-taters" id="mashed-taters" />
+        <label class="block" for="mashed-taters"
+          ><input
+            class="inline"
+            type="checkbox"
+            name="mashed-taters"
+            id="mashed-taters"
+          />
           Mashed Potatoes</label
         >
-        <label class="inputs" for="gbean-casserole"
-          ><input type="checkbox" name="gbean-casserole" id="gbean-casserole" />
+        <label class="block" for="gbean-casserole"
+          ><input
+            class="inline"
+            type="checkbox"
+            name="gbean-casserole"
+            id="gbean-casserole"
+          />
           Green Bean Casserole</label
         >
-        <label class="inputs" for="brussel-sprouts"
-          ><input type="checkbox" name="brussel-sprouts" id="brussel-sprouts" />
+        <label class="block" for="brussel-sprouts"
+          ><input
+            class="inline"
+            type="checkbox"
+            name="brussel-sprouts"
+            id="brussel-sprouts"
+          />
           Brussel Sprouts</label
         >
-        <label class="inputs" for="cranberry-sauce"
-          ><input type="checkbox" name="cranberry-sauce" id="cranberry-sauce" />
+        <label class="block" for="cranberry-sauce"
+          ><input
+            class="inline"
+            type="checkbox"
+            name="cranberry-sauce"
+            id="cranberry-sauce"
+          />
           Cranberry Sauce</label
         >
-        <label class="inputs" for="apple-pie"
-          ><input type="checkbox" name="apple-pie" id="apple-pie" /> Apple
-          Pie</label
+        <label class="block" for="apple-pie"
+          ><input
+            class="inline"
+            type="checkbox"
+            name="apple-pie"
+            id="apple-pie"
+          />
+          Apple Pie</label
         >
-        <label class="inputs" for="pumpkin-pie"
-          ><input type="checkbox" name="pumpkin-pie" id="pumpkin-pie" /> Pumpkin
-          Pie</label
+        <label class="block" for="pumpkin-pie"
+          ><input
+            class="inline"
+            type="checkbox"
+            name="pumpkin-pie"
+            id="pumpkin-pie"
+          />
+          Pumpkin Pie</label
         >
-        <label class="inputs" for="other"
-          ><input type="checkbox" name="other" id="other" /> Other</label
+        <label class="block" for="other"
+          ><input class="inline" type="checkbox" name="other" id="other" />
+          Other</label
         >
       </fieldset>
       <fieldset>
         <label for="other-food"
           >If you selected other, list other favorite Thanksgiving food
           (optional)
-          <textarea class="inputs" name="other-food" id="other-food"></textarea>
+          <textarea class="block" name="other-food" id="other-food"></textarea>
         </label>
       </fieldset>
       <input type="submit" value="Submit" />

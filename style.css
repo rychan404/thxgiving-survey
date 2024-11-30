@@ -1,0 +1,44 @@
+body {
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+p {
+    margin-top: -10px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+#name, #email, #age, select, input[type="radio"], input[for="turkey"], textarea {
+    margin: 5px 0;
+}
+
+form {
+    width: 30vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto;
+}
+
+input[type="submit"] {
+    margin-left: 15px;
+}
+
+fieldset {
+    border: none;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
